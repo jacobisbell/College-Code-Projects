@@ -1,0 +1,30 @@
+Crawford:2000:EPa
+Diane Crawford
+Editorial pointers
+Fox:2000:NTCa
+Robert Fox
+News Track: Celestial backbone; Foreign hands off China's net; Women and the web; DOE says no nuke access; Worst net nightmare; Sidebar: Ethics quiz
+Crawford:2000:FTO
+Diane Crawford and Brian K. E. Balke and Steve Wilstrom and Jef Raskin and Pat McGee
+Forum: Tackling OO Design Principles; Educational Concerns; Building LEGO Robots
+Meeks:2000:EFBa
+Brock N. Meeks
+Electronic frontier: bugging out: Y2K fallout or business as usual?
+Soloway:2000:LEK
+Elliot Soloway and Cathleen Norris and Phyllis Blumenfeld and Barry Fishman and Joseph Krajcik and Ronald Marx
+Log on Education: K--12 and the Internet
+Porter:2000:SCL
+Tom Porter and Galyn Susman
+On site: creating lifelike characters in Pixar movies
+Simons:2000:PBB
+Barbara Simons
+From the President: building Big Brother
+Konana:2000:IOI
+Prabhudev Konana and Nirup M. Menon and Sridhar Balasubramanian
+The implications of online investing
+Gorriz:2000:EGC
+Cecilia M. Gorriz and Claudia Medina
+Engaging girls with computers through software games
+Hargittai:2000:RLI
+Eszter Hargittai
+Radio's lessons for the Internet
