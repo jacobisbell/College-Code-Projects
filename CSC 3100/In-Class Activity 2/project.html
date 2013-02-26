@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>This is our title</title>
+    
+</head>
+
+<body>
+    
+    <ul id="group-names">
+        <li>Jacob Isbell</li>
+        <li>Alex Mayes</li>
+        <li>Eric Roseman</li>
+        <li>Kale Lawson</li>
+    </ul>
+
+    <form id="input" name="input" action="" method="get">
+        Name: <input id="name" type="text" name="Name"><br>
+        Email: <input id="email" type="text" name="Email" value=""><br>
+        Address Line 1: <input id="address1" type="text" name="Address 1" value=""><br>
+        Address Line 2: <input id="address2" type="text" name="Address 2" value=""><br>
+        City: <input id="city" type="text" name="City" value=""><br>
+        State: <input id="state" type="text" name="State" value=""><br>
+        Zip: <input id="zip" type="text" name="Zip" value=""><br>
+        <br>
+        <input type="checkbox" name="Express shipping" value="expressShipping">Express Shipping<br>
+        <input type="checkbox" name="Subscribe to list" value="subscribe" checked>Subscribe to emails<br>
+        <br>
+        
+        <input type="radio" value="cats">Cats<br>
+        <input type="radio" value="noCats">No Cats<br>
+        <input type="radio" value="loveCats">I freakin' love cats!!!<br>
+
+    <br>
+        
+    <input type="reset" value="Reset Form">
+    <input id="submitButton" type="button" value="Submit" onclick=submitFunction()>
+    <input id="summaryButton" type="button" value="Summary" onclick=printText()>
+
+    </form>
+    
+    <img id="catHolder" src="cat.jpg" width="140" height="120">
+        
+    <ul>
+    </ul>    
+    
+    <script type="text/javascript">
+        
+        var haveDisplayedAlert=false;
+    
+        alert("This is my loading alert...");
+        
+        document.getElementById("name").onfocus=function(){
+            if (!haveDisplayedAlert) {
+                alert("You clicked on the name field!")
+                haveDisplayedAlert=true;
+            }
+        };
+        
+        document.getElementById("catHolder").onclick=function(){
+            document.getElementById("catHolder").src = "catFlip.jpg"
+        };
+        
+        function printText() {
+            var newPara = document.createElement("p");
+            var paraText = document.createTextNode(document.getElementById("name").value + " is from " + document.getElementById("city").value + ".");
+            newPara.appendChild(paraText);
+            document.body.appendChild(newPara);
+            return false;
+        };
+        
+        function submitFunction() {
+        
+         var newList = document.createElement("ul");
+
+            for(i=0; i<document.input.elements.length-8; i++)
+            {
+                var listItem = document.createElement("li");
+                var listElement = document.createTextNode(document.input.elements[i].name + ": " + document.input.elements[i].value);
+                listItem.appendChild(listElement);
+                newList.appendChild(listItem);
+            }
+            
+            document.body.appendChild(newList);
+            return false;
+        };
+
+    </script>
+    
+</body>
+</html>
